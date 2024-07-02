@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        // 1 số phương thức thao tác với mảng 
+        // push thêm phần tử vào cuối mảng 
+        let demo1 = [];
+
+        demo1.push("a");
+        demo1.push(1);
+        demo1.push("c");
+        console.log(demo1);
+
+        // shift() xóa phần tử đầu mảng 
+        demo1.shift();
+        console.log(demo1);
+        // unshift() nối phần từ vào đầu mảng 
+        demo1.unshift("bd");
+        console.log(demo1);
+        // nối các phần tử của 2 mảng với nhau 
+        var array1 = [1, 5, 3];
+        var array2 = [4, 2, 7];
+        var array3 = array1.concat(array2);
+        console.log(array3);
+        // sort sắp xếp các phần tử mảng 
+        array3.sort(function (a, b) {
+            return b - a;
+        });
+
+        console.log(array3);
+    </script>
+</body>
+
+</html>

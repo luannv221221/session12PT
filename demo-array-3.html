@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        // khai báo mảng nyc và gián giá trị cho các phần tử mảng 
+        // nhập tên bất kỳ kiểm tra xem trong mảng có phần tử đó ko 
+        var nyc = ["Trang", "Hương", "Hạnh", "Hằng", "Mai"];
+        var keyword = prompt("Nhập vào tên cần tìm ");
+
+        // kiểm tra xem tên nhập từ prompt có nằm trong mảng nyc hay ko nếu có ỉn ra có nếu ko thì in ra ko có 
+
+        // dùng vòng lặp lặp qua tất cả phần tử nyc trong vòng lặp dùng if(phanTumang === keyword)
+        var check = false;
+        for (var i = 0; i < nyc.length; i++) {
+            if (nyc[i] === keyword) {
+                check = true;
+                break;
+            }
+        }
+        if (check) {
+            document.write(`Có tồn tại em ${keyword} trong list nyc`)
+        } else {
+            document.write(`ko tồn tại em ${keyword} trong list nyc`)
+        }
+
+    </script>
+</body>
+
+</html>

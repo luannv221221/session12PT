@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+
+        // for (var i = 1; i <= 10; i++) {
+        //     console.log(i);
+        //     if (i == 5) {
+        //         break;
+        //     }
+        // }
+
+        // nhập vào số nguyên n tìm ra số chẵn lớn nhất trong khoảng từ 1->n  
+        //vd n = 10 ==> số 8 làm sao để thực hiện ít lần lặp nhất 
+        var n = prompt("Nhập vào số nguyên bất kỳ");
+        for (i = n - 1; i > 0; i--) {
+            if (i % 2 == 0) {
+                console.log(i);
+                break;
+            }
+        }
+    </script>
+</body>
+
+</html>

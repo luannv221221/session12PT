@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        // khai báo mảng 
+        var nyc = ["Hạnh", "Hương", "Trang"];
+
+        console.log(nyc);
+        // truy cập vào phần tử mảng truy cập thông qua chỉ số của mảng bienMang[index];
+        // truy cập vào phần tử thứ nhất 
+        nyc[2] = "Phạm Trang";
+
+        // document.write(`Người yêu cũ thứ nhất của tôi tên là ${nyc[0]}`)
+        console.log("nguoi yeu cũ thứ 3 " + nyc[2]);
+
+        // duyệt mang sử dùng vòng lặp 
+        document.write(`<h1>${nyc[0]}</h1>`);
+        document.write(`<h1>${nyc[1]}</h1>`);
+        document.write(`<h1>${nyc[2]}</h1>`);
+
+        for (var i = 0; i < nyc.length; i++) {
+            document.write(`<h1>${nyc[i]}</h1>`);
+        }
+
+        // khai báo mảng nyc nhập tên của từng yêu cũ từ prompt , in ra màn hình 
+
+    </script>
+</body>
+
+</html>

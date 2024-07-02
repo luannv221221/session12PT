@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        // nhập vào danh sách điểm sau hiển thị điểm và tính điểm TB các môn 
+        var marks = [];
+        var n = prompt("Mày muốn nhập bao nhiêu đầu điểm ");
+        // marks[0] = prompt("Nhập điểm thứ 1");
+        // marks[1] = prompt("Nhập điểm thứ 2");
+        // marks[2] = prompt("Nhập điểm thứ 3");
+        for (var i = 0; i < n; i++) {
+            marks[i] = parseInt(prompt("Nhập điểm thứ " + (i + 1)))
+        }
+
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            sum += marks[i];
+        }
+
+        // tính tB Bước 1 tính tổng các phần tử mảng marks 
+        // bước 2 lấy tổng / n 
+        console.log(sum);
+        var markAVG = sum / n;
+        document.write(markAVG)
+    </script>
+</body>
+
+</html>
